@@ -74,8 +74,11 @@
 				<version>4.2.2</version>
 				<configuration>
 					<url>jdbc:mariadb://127.0.0.1:3306/bookdb?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</url>
-					<user>bookadmin</user>
+					<username>bookadmin</username>
 					<password>password</password>
+					<outputChangeLogFile>changelog.xml</outputChangeLogFile>
+					<changeSetAuthor>RE</changeSetAuthor>
+					<changeLogSchemaName>bookdb</changeLogSchemaName>
 				</configuration>
 				<dependencies>
 					<dependency>
